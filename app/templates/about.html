@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}About us{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <h2>About us</h2>
+  <div>
+    <p>Welcome to PixelForge Studios where imagination meets innovation!</p>
+    <img src="{{ url_for('static', filename='img/company-building.png') }}" alt="Company building">
+  </div>
+</div>
+{% endblock content %}
