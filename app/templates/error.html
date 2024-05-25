@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Error{% endblock title %}
+
+{% block content %}
+<div class="container mt-5 center">
+  <img src="{{ url_for('static', filename='img/error.png') }}" alt="Error" class="mb-4 wth-15">
+  <h1>ERROR {{ err_code }}</h1>
+  <p>An error has ocurred: {{ err_code }}</p>
+  <button onclick="history.back()" class="btn btn-custom">Go Back</button>
+</div>
+{% endblock content %}

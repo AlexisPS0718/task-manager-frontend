@@ -3,8 +3,9 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<div class="container">
-  <h1>Hello, world!</h1>
-  <p>Welcome to my home page! This app is intended to help you manage tasks.</p>
+<div class="container mt-5 center">
+  <h1>Welcome to Task Manager</h1>
+  <p>Task Manager is intended to help you manage tasks.</p>
+  <a class="btn btn-custom" href="{{ url_for('task_list') }}">Start now</a>
 </div>
 {% endblock content %}

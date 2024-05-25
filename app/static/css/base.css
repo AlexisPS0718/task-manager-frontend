@@ -1,0 +1,131 @@
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #DDE6ED;
+}
+
+i {
+  color: #27374D;
+}
+
+.form-container {
+  border: 1px solid black;
+  width: min-content;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.navbar-custom {
+  background-color: #27374D !important;
+}
+
+.txt-white {
+  color: white !important;
+}
+
+.nav-title {
+  font-size: 2rem;
+}
+
+.w-medium {
+  font-weight: 500;
+}
+
+.secondary-text {
+  font-size: 1.2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-custom {
+  background-color: #526D82;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #27374D;
+  color: white;
+}
+
+.full-w-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/static/img/inside-company.jpg");
+  background-size: cover;
+  background-position-y: -27rem;
+  width: 100vw;
+  height: 25vh;
+  color: white;
+}
+
+.outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.block {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.input {
+  width: 20rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #27374D;
+  padding: 0.5rem;
+  resize: none;
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.wth-15 {
+  width: 15%;
+}
+
+.task-detail {
+  border: 1px solid #27374D;
+  border-radius: 10px;
+  padding: 1rem 2rem 1rem 2rem;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.delete-form {
+  display: inline;
+}

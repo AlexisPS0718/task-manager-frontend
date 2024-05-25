@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Success{% endblock title %}
+
+{% block content %}
+<div class="container mt-5 center">
+  <img src="{{ url_for('static', filename='img/success.png') }}" alt="Success" class="mb-4 wth-15">
+  <h1>SUCCESS</h1>
+  <p>{{ msg }}</p>
+  <a href="{{ url_for('task_list') }}" class="btn btn-custom">Go Back</a>
+</div>
+{% endblock content %}

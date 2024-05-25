@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}New task{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+  <h1 class="center">New task</h1>
+  <div class="flex-center">
+    <form method="POST" action="{{ url_for('post_task') }}" class="form-container">
+      <div>
+        <label class="block secondary-text">Name:</label>
+        <input class="input rounded" type="text" name="name" id="id_name" placeholder="Task name">
+      </div>
+      <div>
+        <label class="block secondary-text">Summary:</label>
+        <input class="input rounded" type="text" name="summary" id="id_summary" placeholder="Task summary">
+      </div>
+      <div>
+        <label class="block secondary-text">Description:</label>
+        <textarea class="input rounded" name="description" id="id_description" rows="5"
+          placeholder="Write a short description for the task"></textarea>
+      </div>
+      <div class="center">
+        <input type="submit" class="btn btn-custom w-100" value="Create task">
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}

@@ -3,11 +3,13 @@
 {% block title %}About us{% endblock title %}
 
 {% block content %}
-<div class="container">
-  <h2>About us</h2>
-  <div>
-    <p>Welcome to PixelForge Studios where imagination meets innovation!</p>
-    <img src="{{ url_for('static', filename='img/company-building.png') }}" alt="Company building">
-  </div>
+<div class="full-w-img">
+  <h1 class="">About us</h1>
+</div>
+<div class="container mt-3 center">
+  <h2>Learn more about us</h2>
+  <p class="center">Welcome to PixelForge Studios where imagination meets innovation!</p>
+  <img src="{{ url_for('static', filename='img/company-building.png') }}" alt="Company building"
+    class="rounded mb-5 w-50">
 </div>
 {% endblock content %}

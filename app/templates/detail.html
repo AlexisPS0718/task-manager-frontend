@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Task details{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+  <h1 class="center">Task details</h1>
+  <div class="flex-row center">
+    <div>
+      <h2><b>ID</b></h2>
+      <p>{{ task['id'] }}</p>
+    </div>
+    <div>
+      <h2><b>Name</b></h2>
+      <p>{{ task['name'] }}</p>
+    </div>
+    <div>
+      <h2><b>Summary</b></h2>
+      <p>{{ task['summary'] }}</p>
+    </div>
+    <div>
+      <h2><b>Description</b></h2>
+      <p>{{ task['description'] }}</p>
+    </div>
+  </div>
+</div>
+{% endblock content %}
